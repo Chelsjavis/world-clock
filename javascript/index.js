@@ -10,8 +10,18 @@ function updateTime() {
     );
   }
 
-  let perthElement = document.querySelector("#perth");
+  let adelaideElement = document.querySelector("#adelaide");
+  if (adelaideElement) {
+    let adelaideDateElement = adelaideElement.querySelector(".date");
+    let adelaideTimeElement = adelaideElement.querySelector(".time");
+    let adelaideCurrent = moment().tz("Australia/adelaide");
+    adelaideDateElement.innerHTML = adelaideCurrent.format("MMMM Do YYYY");
+    adelaideTimeElement.innerHTML = adelaideCurrent.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 
+  let perthElement = document.querySelector("#perth");
   if (perthElement) {
     let perthDateElement = perthElement.querySelector(".date");
     let perthTimeElement = perthElement.querySelector(".time");
