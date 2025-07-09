@@ -8,10 +8,6 @@ h1 {
   font-size: 38px;
 }
 
-a {
-  color: blueviolet;
-}
-
 .container {
   max-width: 600px;
   margin: 50px auto;
@@ -61,12 +57,28 @@ select {
   font-size: 24px;
 }
 
-.all-cities-label {
+.all-cities-button a {
+  color: white;
+}
+
+.all-cities-button {
   display: block;
   text-align: center;
-  margin: 10px 0;
+  margin: 10px auto;
+  margin-top: 30px;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: blueviolet;
+  opacity: 0.6;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 footer {
   text-align: center;
+}
+
+footer a {
+  color: blueviolet;
 }
