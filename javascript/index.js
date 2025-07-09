@@ -1,10 +1,10 @@
 function updateTime() {
-  let melbourneElement = document.querySelector("#melbourne");
-  let melbourneDateElement = melbourneElement.querySelector(".date");
-  let melbourneTimeElement = melbourneElement.querySelector(".time");
-  let melbourneCurrent = moment().tz("Australia/Melbourne");
-  melbourneDateElement.innerHTML = melbourneCurrent.format("MMMM Do YYYY");
-  melbourneTimeElement.innerHTML = melbourneCurrent.format(
+  let sydneyElement = document.querySelector("#sydney");
+  let sydneyDateElement = sydneyElement.querySelector(".date");
+  let sydneyTimeElement = sydneyElement.querySelector(".time");
+  let sydneyCurrent = moment().tz("Australia/sydney");
+  sydneyDateElement.innerHTML = sydneyCurrent.format("MMMM Do YYYY");
+  sydneyTimeElement.innerHTML = sydneyCurrent.format(
     "h:mm:ss [<small>]A[</small>]"
   );
 
